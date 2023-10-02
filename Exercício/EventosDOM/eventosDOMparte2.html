@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+           
+        }
+        input {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 8px;
+            margin-bottom: 10px;         
+        }
+
+        div#result {
+            border: 1px solid black;
+            background-color: white;
+            color: gray;
+            width: 600px;
+            border-radius: 5px;
+            padding: 8px; 
+            margin-top: 30px;
+            margin: auto;
+            
+        }
+
+        div#container {
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 80px;
+            background-color: rgb(54, 196, 54);
+            text-align: center;
+            color: white;
+            padding-bottom: 50px;
+            width: 800px;
+
+        }
+
+        .ajuste {
+            width: 80px
+        }
+
+        
+      
+
+      
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1> Calculadora </h1>
+        <input type="button" value="somar" id="soma" class="ajuste" onclick="somar()">
+        <input type="button" value="subtrair" id="subtrair" class="ajuste" onclick="subtrair()">
+        <input type="button" value="multiplicar" id="multiplicar"  class="ajuste"onclick="multiplicar()">
+        <input type="button" value="dividir" id="dividir" class="ajuste" onclick="dividir()">
+        <div>
+            <input type="number" name="n1" id="n1">
+            <input type="number" name="n2" id="n2">
+            <div id="result"> resultado </div>
+        </div>
+    </div>
+        
+        <script>
+            function somar(){
+                var a = document.body.querySelector('#n1')
+                var b = document.body.querySelector('#n2')
+                var n1 = Number.parseInt(a.value)
+                var n2 = Number.parseInt(b.value)
+                var s = n1 + n2
+                var r = document.body.querySelector('div#result')
+                r.innerHTML = `A multiplicação entre ${n1} + ${n2} = ${s}`
+            }
+            function subtrair(){
+                var a = document.body.querySelector('#n1')
+                var b = document.body.querySelector('#n2')
+                var n1 = Number(a.value)
+                var n2 = Number(b.value)
+                var s = n1 - n2
+                var r = document.body.querySelector('div#result')
+                r.innerHTML = `A subtração de ${n1} - ${n2} = ${s}`
+            }
+            function multiplicar() {
+                var a = document.body.querySelector('#n1')
+                var b = document.body.querySelector('#n2')
+                var n1 = Number(a.value)
+                var n2 = Number(b.value)
+                var s = n1 * n2
+                var r = document.body.querySelector('div#result')
+                r.innerHTML = ` A multiplicação de ${n1} * ${n2} = ${s}`
+        
+            }
+            function dividir() {
+                var a = document.body.querySelector('#n1')
+                var b = document.body.querySelector('#n2')
+                var n1 = Number(a.value)
+                var n2 = Number(b.value)
+                var s = n1 / n2
+                var r = document.body.querySelector('div#result')
+                r.innerHTML = `A divisão de ${n1} / ${n2} = ${s}`
+            }
+        </script>
+
+    
+</body>
+</html>

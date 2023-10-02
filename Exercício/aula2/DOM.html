@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document object model </title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            background-color: chartreuse;
+            color: white;
+        }
+    </style>
+</head>
+<body class= " xyz ">
+    <h1> Estudando o DOM </h1>
+    <p> Aprendendo a manipular o DOM</p>
+    <p> 2 paragrafo </p>
+    <div id="msg"> kgb </div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = 'blue'
+        corpo.style.background= 'green'
+        corpo.style.color = 'yellow'
+        p1.innerText = 'Mudei usando o Dom'
+        var d = window.document.getElementById('msg')
+        d.style.background = 'white'
+        d.style.color = 'black'
+        d.innerText = 'Mudança de cor'
+        var query = document.querySelector('div#msg')
+        query.innerText = 'Mudei'
+        query.style.color = 'blue'
+        query.style.background = 'green'
+        var titulo = document.querySelector('h1')
+        titulo.innerText = 'Aprendendo a manipular e modificando o DOM'
+        titulo.style.color = 'black'
+        var corpinho = document.querySelector(' body.xyz')
+        corpinho.style.background = 'white'
+        corpinho.style.color = 'black'
+        corpinho.font = 'Arial'
+
+
+    </script>
+    
+</body>
+</html>

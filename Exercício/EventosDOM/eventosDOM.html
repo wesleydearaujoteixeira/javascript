@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eventos Document Object Model</title>
+    <style>
+        div#area {
+            background-color: yellow;
+            color: black;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            margin: auto;
+            text-align: center;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1> Eventos DOM! </h1>
+
+   <div id="area">
+    interejaaa
+
+   </div>
+    <script>
+        var a = document.body.querySelector('#area')
+            a.addEventListener('click', clicou)
+        function clicou(){
+            a.style.background = 'green'
+            a.style.color = 'white'
+            a.innerText = 'Palmeiras'
+
+        }
+        var b = document.body.querySelector('#area')
+            b.addEventListener('mouseenter', entrar)
+        function entrar() {
+            
+            b.style.background = 'black'
+            b.style.color = 'white'
+            b.innerText = 'Corinthians'
+        }
+        var c = document.body.querySelector('#area')
+            c.addEventListener('mouseout', sair)
+        function sair() {
+           
+            c.style.background = 'blue'
+            c.style.color = 'red'
+            c.innerText = 'Fortaleza'
+
+        }
+    </script>
+</body>
+</html>
