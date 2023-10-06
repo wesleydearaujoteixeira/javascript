@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Países </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            background-color: green;
+            color: white;
+
+        }
+
+      
+
+    </style>
+</head>
+<body>
+    <h1> Países </h1>
+    <form>
+        <input type="text" name="nasc" id="nasc">
+        <input type="submit" value="Verificar" id="submit" onclick="nacionalidade()">
+    </form>
+    <div id="res"> O resultado </div>
+    <script>
+        function nacionalidade(){
+            var nas = document.body.querySelector('input#nasc')
+            if(nas.innerHTML == 'brasileiro'){
+                res.innerHTML = 'Você é brasileiro nascido em São Paulo'
+            }else{
+                res.innerHTML = ' Você não é brasileiro, não tem direito à visto '
+            }
+
+        }
+    </script>
+</body>
+</html>
