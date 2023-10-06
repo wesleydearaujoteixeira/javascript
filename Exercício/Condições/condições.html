@@ -11,6 +11,8 @@
             width: 300px;
             height: 50px;
             margin-top: 30px;
+            display: block;
+            text-align: center;
             margin: auto;
             
         }
@@ -26,8 +28,8 @@
         <h1> DETRAN</h1>
         Velocidade do carro <input type="number" name="vel" id="vel"> km/h
         <input type="button" value="Verificar" onclick="velocidade()">
-        <div id="res"> </div>
     </div>
+    <div id="res"> </div>
     <script>
         function velocidade() {
             var carro = document.body.querySelector('#vel')
