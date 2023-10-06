@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Condições </title>
+    <style>
+        div{
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 300px;
+            height: 30px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1> Velocidade do carro</h1>
+    <h1> DETRAN</h1>
     Velocidade do carro <input type="number" name="vel" id="vel">
-    <input type="button" value="Verificar" onlick="velocidade()">
-    <div id="res">
-    
-    
-    
-    </div>
+    <input type="button" value="Verificar" onclick="velocidade()">
+    <div id="res"> </div>
     <script>
-        function velocidade(){
-            var carro = document.body.querySelector('input#vel')
-            var res = document.bodyquerySelector('div#res')
-            var velocidade = Number(carro.value)
-            res.innerText = `Sua velocidade é ${velocidade}`
+        function velocidade() {
+            var carro = Number(document.body.querySelector('#vel'))
+            var res = document.body.querySelector('#res')
+            var velocidade = carro
+            if(velocidade >= 50){
+                res.innerHTML  = `Sua velocidade é ${velocidade} você será multado!`
+            }else{
+                res.innerHTML = ` Sua velocidade é ${velocidade} Você está dirigindo bem, parabéns!`
+            }
 
 
         }
