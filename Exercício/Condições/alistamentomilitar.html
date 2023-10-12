@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alistamento Militar </title>
+    <link rel="stylesheet" href="estilos/exercito.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+</head>
+<body>
+  
+    <div id="main">
+        <h1> Alistamento militar </h1>
+        <form action="cadastro.php" method="post"> 
+            <label for="inome"> Nome </label>
+            <input type="text" name="nome" id="inome" placeholder="Digite seu nome">
+            <label for="nascimento"> Idade </label>
+            <input type="number" name="Idade" id="nascimento" placeholder="Digite a data do seu nascimento">
+            <input type="button" value="Verificar" onclick="carregar()">
+            <div id="res">
+                Veja se você será convocado! 
+        
+            </div>
+        </form>
+        
+    </div>
+    <script src="alistamento.js"></script>
+  
+    
+</body>
+</html>
