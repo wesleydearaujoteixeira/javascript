@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(70, 142, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: white;
+
+}
+
+header {
+    text-align: center;
+    
+
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    width: 700px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 0px black;
+
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+
+}
+
+
+div{
+    width: 550px;
+    height: 250px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+#imagem {
+    text-align: center;
+    margin: auto;
+    margin-top: 20px
+    
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type=button]{
+    margin-top: 5px;
+    height: 44px;
+    width: 144px;
+    font-weight: bold;
+    background-color: aqua;
+    color: black;
+}
+
+#res {
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+}
