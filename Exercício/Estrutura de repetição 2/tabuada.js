@@ -1,7 +1,13 @@
-function tabuada() {
+function tabuad() {
     var numero = Number(document.body.querySelector('#tabuada').value)
     var resultado = document.body.querySelector('#resultado')
-    resultado.innerHTML = ` Esse é o numero ${numero}`
-    resultado.style.background = 'green'
+    if (numero == 0){
+        alert('Erro de digitação! ')
+    }else{
+        resultado.innerHTML = ''
+        for(var c = 1 ; c <= 10; c++){
+            resultado.innerHTML += ` ${c} x ${numero} ${numero * c}<br>`
 
+        }
+    }
 }

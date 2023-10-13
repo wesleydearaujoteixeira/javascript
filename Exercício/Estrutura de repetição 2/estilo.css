@@ -19,12 +19,13 @@ section {
     border-radius: 10px;
     padding: 10px;
     color: black;
-    width: 700px;
+    width: 800px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
     text-align: center;
     margin-bottom: 20px;
     box-shadow: 1px 1px 0px black;
+    height: 700px;
 
 }
 
@@ -71,4 +72,8 @@ input[type=button]{
     color: white;
     text-align: left;
     font-size: 2rem;
+    width: 500px;
+    height: 580px;
+    padding-left: 40px;
+    padding-top: 10px;
 }
