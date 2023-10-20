@@ -54,9 +54,10 @@ function finalizar() {
                 menor = valores[position]
             }
             soma += valores[position]
-            media += soma / total
+           
 
         }
+    media = soma / total
     resposta.innerHTML = ''
     resposta.innerHTML += `<p> O maior número é ${maior}</p>`
     resposta.innerHTML += `<p> O menor número é ${menor}</p>`

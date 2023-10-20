@@ -20,7 +20,7 @@ section {
     padding: 10px;
     color: black;
     width: 700px;
-    height: 500px;
+    height: 700px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
     text-align: left;
@@ -59,7 +59,7 @@ select{
     padding: 10px;
     height: 250px;
     margin-top: 40px;
-    width: 250px;
+    width: 550px;
 }
 
 
