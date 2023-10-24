@@ -59,7 +59,7 @@ function calculateHigher(num) {
 
 }
 
-let resultado = calculateHigher(valores) 
+let resultado = calculateHigher(valores)
 
 function estrelinhas(rows) {
     let pattern = ''
@@ -74,35 +74,4 @@ function estrelinhas(rows) {
     }
 
 }
-let result = estrelinhas(10) 
-
-
-const array = [[1, 2],[3, 4],[5, 6]]
-
-function multiple(all){
-    item = 0 
-    for(let x in all){
-        console.log(`${item = all[x]}`)
-
-    
-    res = item * all[x] 
-    console.log(res)        
-    }
-
-     
-}
-
-console.log(multiple(array))
-
-function area(largura, altura) {
-    const area = largura * altura
-    if(area > 60){
-        console.log(`Erro! área excedeu o limite! ${area}`)
-    }else{
-        return area
-    }
-    
-
-}
-
-console.log(area(6, 4)) */
+let result = estrelinhas(10)  */
