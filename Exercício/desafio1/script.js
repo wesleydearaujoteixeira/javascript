@@ -3,7 +3,7 @@ function carregar(){
     var img = document.body.querySelector('#imagem')
     img.src = 'tarde.jpg'
     var data = new Date()
-    var horas = 6
+    var horas = 21
     msg.innerHTML = ` são ${horas} horas `
     if ( horas >= 0 && horas < 5){
         msg.innerHTML = `Boa Madrugada, são ${horas} hora da madrugada! Durma bem`
