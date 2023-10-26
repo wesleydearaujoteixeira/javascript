@@ -1,5 +1,4 @@
-const ligar = document.querySelector('#ligar')
-const desligar = document.querySelector('#desligar')
+const turn = document.querySelector('#TurnOnOff')
 const lamp = document.querySelector('#lamp')
 
 function isLampBroken() {
@@ -27,11 +26,25 @@ function quebrar(){
     lamp.src = './images/lampada_quebrada.png'
 }
 
+function turnOnOff (){
+    if( turn.innerHTML == 'Ligar'){
+        turnon()
+        turn.innerHTML = 'Desligar'
+    }else{
+        (turn.innerHTML == 'Desligar')
+        turnoff()
+        turn.innerHTML = 'Ligar'
+    }
+    
+    
+}
+
+
+
 
 lamp.addEventListener('mouseenter', turnon)
 lamp.addEventListener('mouseout', turnoff)
-ligar.addEventListener('click', turnon)
-desligar.addEventListener('click', turnoff)
+turn.addEventListener('click', turnOnOff)
 lamp.addEventListener('click', quebrar)
 
 
