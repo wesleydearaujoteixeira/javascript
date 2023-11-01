@@ -1,0 +1,53 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.res {
+    width: 600px;
+    height: 300px;
+}
+
+#main {
+}
+
+#formulario {
+    width: 31%;
+    padding: 20px 0;
+}
+.input {
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px 0;
+}
+
+#selecionado {
+    margin-bottom: 20px;
+}
+
+input[type="button"] {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    
+}
+
+input[type="button"]:hover{
+    transform: translateY(-4px);
+}
+
+#me {
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+}

@@ -8,7 +8,6 @@ const createPokemon = (pokemon) => {
 </div>
 <div class="pokemon_info">
     <h2 class="pokemon_name"> ${pokemon.name} </h2>
-   
     `
 }
 const getAbilities = (abilities) => abilities.map(item => item.ability.name)
