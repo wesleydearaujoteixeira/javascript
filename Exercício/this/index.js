@@ -1,8 +1,8 @@
-/*const pessoa = {
+const pessoa = {
     nome: 'Wesley', 
     idade: 25,
     falar: () => {
-        console.log(`Olá, tudo bem!`)
+        console.log(`Olá, tudo bem! ${pessoa.nome}`)
     },
     dizernome: function () {
         console.log(`O meu nome é ${this.nome}`)
@@ -13,17 +13,13 @@
 
     }
 }
-pessoa.falar()
-pessoa.dizernome()
-console.log(pessoa.idade)
-pessoa.aniversario()
-console.log(pessoa.idade)*/
 
-const objeto = {
-    valor: 500,
-    cont: function () {
-        console.log(`O valor é ${this.valor}`)
-    }
-}
+pessoa.dizernome() 
 
-objeto.cont()
+pessoa.nome = 'Lucas'
+
+
+const dizer = pessoa.dizernome.bind(pessoa)
+
+
+dizer()
