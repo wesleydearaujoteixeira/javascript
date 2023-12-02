@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(43, 121, 121);
+            height: 90vh;
+            width: 80vw;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        #main {
+            background-color: white;
+            width: 90vw;
+            height: 40vh;
+            margin: 20px;
+            border-radius: 30px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 2em;
+            color: black;
+        }
+
+        h1 {
+            font-size: 3em;
+          
+        }
+
+        #res {
+            width: 90%;
+            height: 60%;
+            margin: 0 auto;
+            font-size: 4em;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            gap: 30px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1> MEU TIMER  </h1>
+        <div id="res">
+            00:00:00
+        </div>
+        <div class="form">
+            <button id="iniciar"> iniciar </button>
+            <button id="pausar"> pausar </button>
+            <button id="zerar"> zerar </button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
